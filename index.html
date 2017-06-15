@@ -12,11 +12,12 @@
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   +Agregar Tarea
 </button>
-  
+     
   <table class="table table-striped">
     <thead>
       <th>Nombre</th>
       <th>Estado</th>
+      <th>Acciones</th>
     </thead>
     <tbody id="tasks-list"></tbody>
   </table>
@@ -44,6 +45,26 @@
       </form>
     </div>
   </div>
+
+<!-- Modal Información -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="modalDatos">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Datos de Tarea</h4>
+          </div>
+          <div class="modal-body">
+              <p>Nombre: <span id="nombreTarea"></span></p>
+              <p>Estado: <span id="estadoTarea"></span></p>
+              <p>Fecha de creación: <span id="fechaTarea"></span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
  
   
   <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
